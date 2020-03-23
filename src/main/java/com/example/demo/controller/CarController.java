@@ -41,7 +41,7 @@ public class CarController {
 	@GetMapping("/hi2")
 	public Car getCar(@RequestParam String model) {	
 		Car queryCar = new Car(model);
-		
+		System.out.println("starting get car.....");
 		//List<Car> carsResult = carRepo.findCivic();
 		//List<Car> carsResult = carRepo.findByCarModel("thatone");
 		//List<Car> carsResult = carRepo.findByNameEndsWith("ijiji");
